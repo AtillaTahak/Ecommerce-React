@@ -13,16 +13,17 @@ E-Commerce Frontend Case Study
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
-	![screenshot](screenshot.png)
 
-	This repository contains an e-commerce application developed using Redux and Redux-Saga. Built with React and TypeScript, this application features product listing and detail views. It also provides basic e-commerce functionality such as adding products to a shopping cart.
+![screenshot](screenshot.png)
+
+This repository contains an e-commerce application developed using Redux and Redux-Saga. Built with React and TypeScript, this application features product listing and detail views. It also provides basic e-commerce functionality such as adding products to a shopping cart.
 
 ## Features
-	Product Listing Page: Allows users to view various products and access their details.
-	Product Detail Page: Displays detailed information about each product.
-	Add to Cart and Cart Summary: Enables users to add products to their cart and lists the added items.
-	Redux and Redux-Saga: Used for state management and controlling side effects.
-	Unit Tests: Ensures robustness and fault tolerance of the application.
+Product Listing Page: Allows users to view various products and access their details.
+Product Detail Page: Displays detailed information about each product.
+Add to Cart and Cart Summary: Enables users to add products to their cart and lists the added items.
+Redux and Redux-Saga: Used for state management and controlling side effects.
+Unit Tests: Ensures robustness and fault tolerance of the application.
 	Technologies Used
 		- React
 		- TypeScript
@@ -34,7 +35,7 @@ E-Commerce Frontend Case Study
 		- Testing Library
 
 ## Project Structure
-
+```
 src/
 ├── app/
 │   ├── store.ts
@@ -85,11 +86,12 @@ src/
 │       ├── CartSummary.test.tsx
 │       └── ProductCard.test.tsx
 └── App.tsx
+```
 ## Setup and Running
-	Follow these steps to get the project up and running on your local machine.
+Follow these steps to get the project up and running on your local machine.
 
-	Clone the Project and Install Dependencies
-	Start the Development Server
+Clone the Project and Install Dependencies
+Start the Development Server
 
 ```bash
 $  git clone https://github.com/username/frontend-case-study.git
@@ -107,15 +109,16 @@ $  npm run test
 	Redux-Saga is a library used to manage side effects in Redux-based applications. It is especially preferred for asynchronous operations (API calls, localStorage operations, etc.).
 
 ## Workflow in This Project
-	Store Structure:
+
+Store Structure:
 
 	store.ts creates the Redux store and adds saga middleware.
 	rootSaga.ts combines all sagas.
 	Managing Products with Redux-Saga:
 
-	Slice: productsSlice.ts uses Redux slice logic to define a reducer and actions for products.
-	Saga: productsSaga.ts defines a saga function to fetch products from the API.
-	Saga Flow
+Slice: productsSlice.ts uses Redux slice logic to define a reducer and actions for products.
+Saga: productsSaga.ts defines a saga function to fetch products from the API.
+Saga Flow
 
 	graph TD
 	A[Store] --> B[Product Slice]
@@ -123,10 +126,12 @@ $  npm run test
 	C --> D[Product Saga]
 	D -->|API Call| E[fetchProductsSuccess / fetchProductsFailure]
 	E --> B
-	Example Usage
-	In ProductList.tsx, the fetchProductsStart action is triggered when the product listing page is loaded.
-	This action activates the fetchProductsSaga function in productsSaga.ts.
-	fetchProductsSaga fetches the products from the API and passes the result to Redux state via the fetchProductsSuccess or fetchProductsFailure actions.
+
+Example Usage
+
+In ProductList.tsx, the fetchProductsStart action is triggered when the product listing page is loaded.
+This action activates the fetchProductsSaga function in productsSaga.ts.
+fetchProductsSaga fetches the products from the API and passes the result to Redux state via the fetchProductsSuccess or fetchProductsFailure actions.
 
 
 ## Contact
