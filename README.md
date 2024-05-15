@@ -94,8 +94,8 @@ Clone the Project and Install Dependencies
 Start the Development Server
 
 ```bash
-$  git clone https://github.com/username/frontend-case-study.git
-$  cd frontend-case-study
+$  git clone github.com/AtillaTahak/Ecommerce-React
+$  cd ecommerce-react
 $  npm install
 $  npm run dev
 ```
