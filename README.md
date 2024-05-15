@@ -6,11 +6,10 @@ E-Commerce Frontend Case Study
   - [Features](#features)
 - [Project Structure](#project-structure)
 - [Setup and Running](#setup-and-running)
-- [Run Tests](#run-test)
+- [Run Tests](#run-tests)
 - [Redux and Redux-Saga Workflow](#redux-and-redux-saga-workflow)
 - [Workflow in This Project](#workflow-in-this-project)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -24,15 +23,15 @@ Product Detail Page: Displays detailed information about each product.
 Add to Cart and Cart Summary: Enables users to add products to their cart and lists the added items.
 Redux and Redux-Saga: Used for state management and controlling side effects.
 Unit Tests: Ensures robustness and fault tolerance of the application.
-	Technologies Used
-		- React
-		- TypeScript
-		- Redux
-		- Redux-Saga
-		- Axios
-		- React Router DOM
-		- Vitest
-		- Testing Library
+Technologies Used
+- React
+- TypeScript
+- Redux
+- Redux-Saga
+- Axios
+- React Router DOM
+- Vitest
+- Testing Library
 
 ## Project Structure
 ```
@@ -87,7 +86,8 @@ src/
 │       └── ProductCard.test.tsx
 └── App.tsx
 ```
-## Setup and Running
+## Setup and Running
+
 Follow these steps to get the project up and running on your local machine.
 
 Clone the Project and Install Dependencies
@@ -112,10 +112,9 @@ $  npm run test
 
 Store Structure:
 
-	store.ts creates the Redux store and adds saga middleware.
-	rootSaga.ts combines all sagas.
-	Managing Products with Redux-Saga:
-
+store.ts creates the Redux store and adds saga middleware.
+rootSaga.ts combines all sagas.
+Managing Products with Redux-Saga:
 Slice: productsSlice.ts uses Redux slice logic to define a reducer and actions for products.
 Saga: productsSaga.ts defines a saga function to fetch products from the API.
 Saga Flow
