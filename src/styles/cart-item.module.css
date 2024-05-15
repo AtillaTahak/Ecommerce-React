@@ -1,0 +1,59 @@
+.cartItem {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.cartContentText {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 min-content;
+}
+
+.cartContentText span {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.63px;
+}
+
+.cartContentText p {
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 12.19px;
+	color: #2A59FE;
+}
+
+.cartContent {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 1 0 50%;
+}
+
+
+.cartContent input {
+	height: 27px;
+	line-height: 14.63px;
+	color: #fff;
+	background-color: #2A59FE;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.94px;
+	width: 40px;
+	border: none;
+	text-align: center;
+}
+
+.cartContent button {
+	padding: 8px 16px;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), linear-gradient(0deg, rgba(42, 89, 254, 0.3), rgba(42, 89, 254, 0.3)), #000000;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.cartContent button:hover{
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), linear-gradient(0deg, rgba(42, 89, 254, 0.5), rgba(42, 89, 254, 0.5)), #000000;
+}

@@ -1,0 +1,80 @@
+.filter{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.filter .filterTitle{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #333333B2;
+
+}
+
+.filter .filterContent{
+	display: flex;
+	height: 181px;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	gap: 15px;
+	padding: 8px 8px 8px 12px;
+}
+
+.filter .filterContent .filterItems{
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	align-items: start;
+	gap: 15px;
+	width: 100%;
+	height: 102px;
+	overflow-y: scroll;
+}
+
+
+.filter .filterSearch{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+
+}
+
+
+.iconWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	padding:  16px 8px 8px 12px;
+	width: 24px;
+	height: 24px;
+
+}
+
+.searchInput{
+	flex: 1;
+	width: 100%;
+	height:40px;
+	padding-left: 42px;
+	background-color: #F9F9F9;
+	border: none;
+	outline: none;
+	margin-top: 10px;
+}
+
+
+.filter .filterContent .filterItems .filterItem{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 7px;
+}
+.filter .filterContent .filterItems .filterItem label{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17.07px;
+}

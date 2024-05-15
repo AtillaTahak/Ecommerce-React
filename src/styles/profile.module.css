@@ -1,0 +1,17 @@
+.user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 9px;
+}
+
+.user span{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+}
+
+.userIcon{
+	width: 14px;
+	height: 17px;
+}

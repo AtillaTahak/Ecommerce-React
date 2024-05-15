@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #F9F9F9;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	margin-top: 33px;
+}
+
+.active {
+	color: #007bff;
+}
+
+
+.cart-summary {
+	width: 25%;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17.07px;
+
+}
+
+.pagination {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.pagination button {
+	margin: 0 5px;
+	border: none;
+	cursor: pointer;
+	background: transparent;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17.07px;
+	width: 6px;
+	color: #333333B2;
+}
+
+.pagination button.active {
+	background-color: #fff;
+	color: #2A59FE;
+	border-radius: 6px;
+	width: 24px;
+	text-align: center;
+
+	height: 24px;
+	box-shadow: 0px 0px 10px 0px #A2AAB440;
+
+}
+
+input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	outline: 1px solid #2A59FE;
+	outline-offset: -2px;
+	border-radius: 4px;
+	border: 1px solid #007bff;
+	border-radius: 4px;
+
+}
+
+input[type="checkbox"]:focus {
+	outline: none;
+}
+
+input[type="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding: 2px;
+	background-clip: content-box;
+	border: 2px solid #2A59FE;
+	border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+	background-color: #2A59FE;
+}

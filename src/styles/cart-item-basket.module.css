@@ -1,0 +1,27 @@
+.bag{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-items: center;
+	cursor: pointer;
+}
+.bag:hover{
+	color: #0036B3;
+}
+
+.bag span{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.5px;
+}
+
+.bagIcon{
+	width: 24px;
+	height: 24px;
+}
+
+@media (max-width: 768px){
+	.bag span{
+		display: none;
+	}
+}

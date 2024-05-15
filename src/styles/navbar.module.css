@@ -1,0 +1,35 @@
+nav{
+	background-color: #2A59FE;
+	color: white;
+}
+
+.content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 5px 5px;
+	overflow: hidden;
+}
+
+.left{
+	display: flex;
+	align-items: center;
+	width: 15%;
+}
+.left h1{
+	cursor: pointer;
+}
+.center{
+	display: flex;
+	align-items: center;
+	width: 70%;
+}
+
+.right{
+	display: flex;
+	align-items: center;
+	gap: 17px;
+	width: 15%;
+}
