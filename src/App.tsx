@@ -7,11 +7,11 @@ import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 
 const App = () => {
-	document.title = 'Eteration Shop';
+	document.title = 'Ecommerce Shop';
   return (
     <Router>
       <header>
-		<NavBar title='Eteration'>
+		<NavBar title='Ecommerce'>
 			<SearchBar />
 		</NavBar>
       </header>
